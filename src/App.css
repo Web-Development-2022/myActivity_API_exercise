@@ -1,38 +1,166 @@
-.App {
+/* General */
+
+#root {
+  --main-blue: #20A39E;
+  --clear-orange: #FFBA49;
+  --dark-orange: #EF5B5B; 
+}
+
+.container {
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+
+::selection {
+  color: var(--main-blue);
+  background: var(--clear-orange);
+}
+
+.btn {
+  margin-top: 15px;
+  color: var(--main-blue);
+  border-color: var(--main-blue);
+}
+
+.btn:hover{
+  background-color: var(--main-blue);
+  border-color: none;
+}
+
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+
+#nav {
+  margin-bottom: 0!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background-color: var(--clear-orange);
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home */
+
+.hero {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#activity {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--dark-orange);
+  padding: 10px;
+}
+
+.hero h6 {
+  padding: 5px;
+}
+
+/* Activities */
+
+.container-activities {
+  padding-bottom: 60px;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+#intro {
+  text-align: center;
+  margin-bottom: 70px
+}
+
+span {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--dark-orange);
+  padding: 10px;
+}
+
+#results {
+  margin-left: 40px;
+}
+
+.single-btn-version ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.single-btn-version li {
+  margin-right: 15px;
+}
+
+.single-btn-version #results li {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.dropdown-version #note {
+  font-size: 10px;
+  margin: 0px;
+}
+
+#dropdown-menu {
+  background-color: white;
+  color: var(--main-blue);
+  border-color: var(--main-blue);
+}
+
+/* About */
+
+#row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 750px;
+}
+
+.column h2 {
+  padding-bottom: 15px;
+}
+
+/* Footer */
+
+footer .container {
+  margin-top: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 15px;
+  border-top: 2px solid #f5f5f5;
+  background-size: cover;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Not Found */
+
+.notfound {
+  text-align: center;
 }
